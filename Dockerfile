@@ -18,3 +18,9 @@ RUN pip install psycopg2\
      dataflows
 
 WORKDIR /home
+
+RUN git clone https://github.com/NYCPlanning/db-data-recipes.git
+
+WORKDIR /home/db-data-recipes
+
+RUN git pull origin bcao
