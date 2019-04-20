@@ -12,9 +12,10 @@ RUN apt-get update &&\
         gcc\
         libgdal-dev\
         gdal-bin\
+        g++\
         postgresql-client-common
 
-RUN pip install pygdal=="`gdal-config --version`.*"\
+RUN pip install numpy pygdal=="`gdal-config --version`.*"\
   shapely usaddress dataflows\
   psycopg2-binary\
    datapackage-pipelines datapackage-pipelines-aws
