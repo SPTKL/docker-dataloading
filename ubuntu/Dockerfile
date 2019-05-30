@@ -4,6 +4,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
+RUN echo 'alias python=python3' >> ~/.bashrc
+
 RUN apt-get install -y\
         nano\
         postgresql-client-common\
