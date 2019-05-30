@@ -2,8 +2,8 @@ FROM continuumio/miniconda3:4.5.12
 
 RUN apt-get update &&\
     apt-get install -y\
-        software-properties-common\
-        build-essential\
+        # software-properties-common\
+        # build-essential\
         curl\
         git\
         nano\
