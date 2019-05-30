@@ -12,7 +12,6 @@ RUN apt-get update &&\
         gcc\
         libgdal-dev\
         gdal-bin\
-        postgis\
         g++\
         postgresql-client-common\
         && rm -rf /var/lib/apt/lists/*

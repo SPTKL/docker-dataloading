@@ -11,12 +11,10 @@ RUN apt-get update &&\
         python3-dev\
         mdbtools\
         gcc\
-        libgdal-dev\
-        gdal-bin\
         postgis
 
 RUN conda install -y -c conda-forge gdal
-RUN pip install psycopg2\
+RUN pip install psycopg2-binary\
      datapackage-pipelines\
      datapackage-pipelines-aws\
      dataflows
