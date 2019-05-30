@@ -2,7 +2,6 @@ FROM python:3.8.0a3-slim-stretch
 
 RUN apt-get update &&\
     apt-get install -y\
-        software-properties-common\
         curl\
         git\
         nano\
